@@ -1,0 +1,12 @@
+pre {
+	background: none;
+}
+
+article.snippet {
+	margin-bottom: 2em;
+	border-bottom: 1px dashed #e3e3e3;
+}
+
+.flex {
+	flex: 1;
+}
