@@ -23,7 +23,7 @@
             <a href="/snippets/{{ $snippet->originalSnippet->id }}">
                 {{ $snippet->originalSnippet->title }}
             </a>
-        </he>
+        </h3>
     @endif
 
     @if ($snippet->forks->count())
