@@ -54,11 +54,9 @@ class SnippetsController extends Controller
             'body' => 'required'
         ]);
         
-        Snippet::create([
-            'title' => request('title'),
-            'body' => request('body'),
-            'forked_id' => request('forked_id')
-        ]);
+        Snippet::create(
+            request()->only(['title', 'body', 'forked_id'])
+        );
 
         return redirect()->home();
     }
